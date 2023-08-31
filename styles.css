@@ -1,0 +1,177 @@
+
+
+@font-face {
+    font-family: "Figtree";
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url(https://fonts.gstatic.com/s/figtree/v5/_Xmz-HUzqDCFdgfMsYiV_F7wfS-Bs_d_QG5XyEAk4A.woff2) format("woff2");
+}
+
+
+*{
+    font-family: "Figtree";
+
+}
+
+
+body {
+    /* background-color: black; */
+    /* background-color: red; */
+    height: 98vh;
+    animation: changeColors 25s linear infinite;
+}
+
+@keyframes changeColors {
+
+    0% {
+        background-color: #B8740B;
+    }
+
+    15% {
+        background-color: #855305;
+    }
+
+    30% {
+        background-color: #684001;
+    }
+
+    45% {
+        background-color: #231601;
+    }
+
+    65% {
+        background-color: #4C453A;
+    }
+
+    85% {
+        background-color: #053C67;
+    }
+
+    100% {
+        background-color: #022143;
+    }
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; 
+}
+
+.container {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    /* height: 100%; */
+
+}
+
+img {
+    width: 30rem;
+}
+
+
+a {
+    position: absolute;
+
+    margin-top: 35rem;
+    border: 1px solid #fce4e1;
+    min-width: 5%;
+    height: 3%;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 500ms;
+
+    text-decoration: none;
+
+
+}
+
+a:hover {
+    border-color: black;
+
+
+}
+
+a>.contact {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #fce4e1;
+    margin: 0px auto;
+
+    transition: all 500ms;
+
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+a>.contact:hover {
+    text-decoration: none;
+    color: black;
+
+
+}
+
+
+
+@media (max-width:1100px) {
+    img {
+        width: 28rem;
+    }
+
+    a {
+        margin-top: 27rem;
+        width: 10%;
+    }
+}
+
+@media (max-width:760px) {
+    img {
+        width: 25rem;
+    }
+
+    a {
+        margin-top: 27rem;
+        width: 12%;
+    }
+}
+
+@media (max-width:550px) {
+    img {
+        width: 22rem;
+    }
+
+    a {
+        margin-top: 27rem;
+        width: 17%;
+    }
+}
+
+@media (max-width:430px) {
+    img {
+        width: 18rem;
+    }
+
+    a {
+        width: 25%;
+    }
+}
+
+@media (max-width:340px) {
+    img {
+        width: 15rem;
+    }
+
+    a {
+        margin-top: 24rem;
+        width: 28%;
+    }
+}
